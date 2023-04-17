@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #673bb7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo2{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;	
+	color: black;
+	font-weight:bold;
+	text-shadow: 1px 1px 2px grey;
+}
+.titulo3{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;	
+	color: white;
+	font-weight:bold;
+	text-shadow: 1px 1px 2px grey;
+}
+/* AboutUS */
+
+.galeria{
+    background-color:#9475cc;
+	padding: 5rem;
+}
+
+.contenedor--img{
+    width: 50%;
+    margin: auto;
+}
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    margin: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #e9eaec; 
+	margin-bottom: 5rem;
+}
+/* CARACTERISTICAS */
+
+.caracteristicas{
+    width: 70%;
+    margin: auto;
+}
+.caracteristicas-titulo{
+    text-align: center;
+    border-bottom: 5px solid #673bb7;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+.caracteristicas-parrafo{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.caracteristicas-contenedor{
+    display: flex;
+}
+.caracteristicas-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.caracteristica-item{
+    margin: 1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+}
+.caracteristica-img{
+    border-radius: 1rem;
+}
+.caracteristica-texto h3{
+    margin: 1rem 0;
+}
+/*##############################*/
+/*Opiniones de usuario*/
+.galeria2{
+    background-color:#fff;
+	padding: 5rem;
+}
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color: #cc9199;
+    font-size: 50px;
+}
+
+.card p{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/*##############################*/
+/*Precios*/
+
+.galeria3{
+    background-color:#9475cc;
+	padding: 5rem;
+}
+.contenedor-precios{
+    width: 90%;
+    max-width:900px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.tabla{
+    width: 33%;
+    height: 550px;
+	margin: auto;
+    border:1px solid #343759;
+	border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px  #343759;
+    padding: 60px;
+	text-align: center;
+	flex-grow: 1;
+    color: #343759;
+}
+
+.tabla>h2{
+	font-size:30px;
+    margin-bottom:35px;
+}
+    
+.tabla img{
+    width: 64px;
+	margin-bottom:35px;
+}
+    
+.tabla > h3{
+	font-size:30px;
+    margin-bottom: 20px;
+}
+    
+.tabla > p{
+    display: block;
+    margin-bottom:20px;
+}
+ 
+.boton{
+	display:inline-block;
+	width: 150px;
+    padding:12px;
+	background: #a5f059;
+	text-decoration: none;
+    color: #343759;
+	border-radius: 100px;
+	text-align: center;
+    font-size: 14px;
+	font-weight: 600;
+    margin: auto;
+}
+    
+.tabla:hover{
+	background: #343759;
+	color: #f1f1f2;
+    transition: .5s all;
+    transform: scale(1.1);
+	cursor: pointer;
+}
+/*######################*/
+#contacto {
+background-color: #fff;
+padding: 2rem;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+font-weight: bold;
+}
+
+input, textarea {
+margin-bottom: 1rem;
+padding: 0.5rem;
+border-radius: 4px;
+border: 1px solid #ccc;
+}
+
+button {
+background-color: #673bb7;
+color: #fff;
+padding: 0.5rem 1rem;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 1rem;
+}
+
+button:hover {
+background-color: #512da8;
+}
+
+@media screen and (max-width: 1000px){
+    /*Precios responsive*/
+    .tabla{
+        width: 45%;
+        max-width:none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+    /*CARACTERISTICAS*/
+    .caracteristicas-contenedor{
+		flex-direction: column;
+	}
+	.caracteristica-texto{
+		text-align: center;
+	}
+    
+}
+@media screen and (max-width: 700px){
+    .tabla{
+        width: 45%;
+        padding:30px;
+    }
+    .tabla > h2{
+        margin-top:40px;
+    }
+     /*CARACTERISTICAS*/
+    .caracteristicas-contenedor{
+		flex-direction: column;
+	}
+	.caracteristica-texto{
+		text-align: center;
+	}
+    .card{
+        height: 380px;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+     /*Galeria*/
+     .galeria-cont>img{
+        width: 48%;
+    }
+	.galeria-cont{
+        flex-wrap: wrap;
+        justify-content: column;
+    }
+}
+
+@media screen and (max-width:550px){
+    .tabla{
+        width: 85%;
+       padding: 20px;
+   }
+    /*CARACTERISTICAS*/
+    .caracteristicas-contenedor{
+		flex-direction: column;
+	}
+	.caracteristica-texto{
+		text-align: center;
+	}
+    .card{
+        height: 380px;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+     /*Galeria*/
+     .galeria-cont>img{
+        width: 97%;
+    }
+    .galeria-cont{
+        flex-wrap: wrap;
+        justify-content: column;
+    }
+}
